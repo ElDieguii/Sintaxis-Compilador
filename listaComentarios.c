@@ -16,7 +16,7 @@ comentarios *listaDeComentarios (comentarios *lista){
 comentarios *listarComentario(comentarios*lista, char *comentario){
     comentarios *nuevo_comentario, *aux, *aux2;
     nuevo_comentario = (comentarios*)malloc(sizeof(comentarios));
-    strcpy(nuevo_comentario->comentario, comentario);
+    nuevo_comentario->comentario = comentario;
     nuevo_comentario->sig = NULL;
     aux = lista;
 
@@ -40,7 +40,7 @@ int main(){
     listaComentarios = listarComentario(listaComentarios, "asfasf");
     listaComentarios = listarComentario(listaComentarios, "asfasfg");
     while(listaComentarios!=NULL){
-        printf("%s ", listaComentarios->comentario);
+        printf("%s \n", listaComentarios->comentario);
         listaComentarios = listaComentarios->sig;
     }
     
