@@ -46,13 +46,13 @@ int main(){
     
 
     ///--- PRUEBA DE CARACTERES ---
-    lista = agregarCaracter(lista, 'a');
-    lista = agregarCaracter(lista, 'b');
+    lista = agregarCaracter(lista, '!');
+    lista = agregarCaracter(lista, '{');
     lista = agregarCaracter(lista, 'b');
     lista = agregarCaracter(lista, 'd');
     lista = agregarCaracter(lista, 'c');
-    lista = agregarCaracter(lista, 'b');
-    lista = agregarCaracter(lista, 'd');
+    lista = agregarCaracter(lista, '{');
+    lista = agregarCaracter(lista, '}');
     lista = agregarCaracter(lista, 'c');
     while(lista!=NULL){
         printf("%c ", lista->caracter);
