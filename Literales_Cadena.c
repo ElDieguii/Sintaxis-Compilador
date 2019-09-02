@@ -41,7 +41,7 @@ int main(){
     listaComentarios = listarComentario(listaComentarios, "asfasfg");
     while(listaComentarios!=NULL){
         printf("%s \n", listaComentarios->comentario);
-        printf("longitud: %d ",strlen(listaComentarios->comentario));
+        printf("longitud: %d \n",strlen(listaComentarios->comentario));
         listaComentarios = listaComentarios->sig;
     }
     
