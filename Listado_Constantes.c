@@ -52,7 +52,7 @@ int main(){
     lista = agregarCaracter(lista, "123");
     lista = agregarCaracter(lista, "456");
     while(lista!=NULL){
-        printf("%s ", lista->constante);
+        printf("%s \n", lista->constante);
         
         lista = lista->sig;
     }
